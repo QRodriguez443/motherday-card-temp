@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./resources/css/style.css" id="main-css">
+    <style>
+    /* Add the CSS from NextPage.html here */
+    .ParentContainer {
+        display: flex;
+    }
+
+    #newContent {
+        display: none; /* Hide the Master div by default */
+        align-items: center;
+        justify-content:center;
+        height: 100%;
+        width: 100%;
+        right:0%;
+        position:fixed;
+    }
+
+        .ImageContainerAlt {
+        height: 100%;
+        width: 36.3%;
+        border: 1px solid black;
+        box-sizing: border-box;
+        box-shadow: -10px 0 20px black;
+        position: relative;
+        background-color: white;
+        margin-left: 13%;
+    }
+    
+    .MainImage .contents {
+        max-width: 140%;
+        max-height: 140%;
+        object-fit: contain;
+        position: relative;
+        right: 100px;
+        bottom: 50px;
+    }
+    
+    .ImageContainer2 {
+        height: 100%;
+        width: 36.3%;
+        overflow: hidden;
+        border: 1px solid black;
+        box-sizing: border-box;
+        box-shadow: 15px 0 20px black;
+        position: absolute;
+        left: 49.3%;
+    }
+    
+    .SecondImage .md {
+        position: relative;
+    }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div class="ImageContainer">
+            <div class="MainImage">
+                <img src="./resources/images/MotherDay.gif" alt="Image">
+            </div>
+            <div class="FlipImage">
+                <img src="./resources/images/FlipPage.png" class="FlipPage-image" >
+            </div>
+        </div>
+        <div class="triangle" ></div>
+        <div class="button">
+            <button data-page="NextPage"></button>
+        </div>
+    </div>
+
+    <!-- Include the content of NextPage.html here -->
+    <div class="Master" hidden>
+        <div class="ParentContainer"> <!-- New parent div -->
+            <div class="ImageContainerAlt">
+                <div class="MainImage">
+                    <img src="./resources/images/MotherDayContents.png" class="contents" alt="Image">
+                </div>
+            </div>
+            <div class="ImageContainer2">
+                <div class="SecondImage">
+                    <img src="./resources/images/MotherDay.gif" class="md">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./resources/scripts/FlipPage.js"></script>
+</body>

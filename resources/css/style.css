@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: yellow;
+}
+
+#content {
+    position:relative;
+    bottom:1%;
+}
+
+.ImageContainer {
+    height: 100%;
+    width: 36.3%;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black; /* This will add a 10px solid black border around the .ImageContainer */
+    box-sizing: border-box; /* This will ensure that the border is included in the total width and height of the .ImageContainer */
+    left: 378px;
+    box-shadow: 0 0 20px black;
+}
+
+.MainImage {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.MainImage .image-container {
+    height: 100%;
+    width: 100%;
+}
+
+.MainImage img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.FlipImage {
+    display:flex;
+    position: absolute;
+    top: 568px;
+    left:390px;
+    z-index: 999;
+}
+
+.button button {
+    position: absolute;
+    width:5%;
+    height:10%;
+    left:61.3%;
+    bottom:0.1%;
+    z-index: 1000;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
+.FlipPage { /*button's hitbox*/
+    position: relative;
+    width:100%;
+    height:97.09%;
+    border:none;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.FlipPage-image {
+    width: 104%;
+    height:100%;
+}
+
+.triangle {
+    display:flex;
+    position: absolute;
+    top: 576.5px;
+    left:773.5px;
+    width: 0;
+    height: 0;
+    border-top: 62px solid transparent; /* change the color to whatever you want */
+    border-right: 61px solid white;
+    z-index: 998;
+  }
