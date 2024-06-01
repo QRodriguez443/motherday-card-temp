@@ -1,4 +1,6 @@
 Mothers' Day Card Template
+## Requirements
+Node Package Manager
 
 ## Description
 A simple, virtual Mothers' day card, with page flip animation made by scratch.
